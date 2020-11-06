@@ -1,0 +1,62 @@
+WEEK 6 : Simple Programs using JSP and AJAX
+-------------------------------------------------
+
+CODE :
+
+[JSP Program]
+
+[FILE : jsps.jsp]
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+		String str = "HELLO SERVLET";
+%>
+
+<h1><%= str %></h1>
+</body>
+</html>
+
+-------------------------------------------------------------------
+------------------------------------------------------------------
+
+[AJAX Program]
+
+[FILE : index.html]
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX</title>
+    <script type="text/javascript">
+        function ajaxFunction(){
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function(){
+                if(this.readyState==4 && this.status==200){
+                    document.getElementById("test").innerHTML = this.responseText
+                }
+            };
+            ajax.open("POST", "ajax_info.txt", true);
+            ajax.send()
+        }
+    </script>
+</head>
+<body>
+    <button onclick="ajaxFunction()">Call Ajax</button>
+    <div id="test"></div>
+</body>
+</html>
+------------------------------------------------------------------
+
+[FILE: ajax_info.txt]
+
+THIS IS BEST
+------------------------------------------------------------------
+------------------------------------------------------------------

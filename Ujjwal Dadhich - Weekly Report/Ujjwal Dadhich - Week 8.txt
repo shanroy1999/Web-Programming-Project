@@ -1,0 +1,27 @@
+WEEK 8 : Design simple application for accessing the data using XML
+---------------------------------------------------------------------------
+CODE: XML code for creating a database of song records.
+
+[FILE : books.xml]
+
+<?xml version="1.0" encoding="UTF-8"?>
+ <CATALOG>
+<CD>
+<TITLE>Empire Burlesque</TITLE>
+<ARTIST>Bob Dylan</ARTIST>
+<COUNTRY>USA</COUNTRY>
+<COMPANY>Columbia</COMPANY>
+</CD>
+<CD>
+<TITLE>Hide your heart</TITLE>
+<ARTIST>Bonnie Tyler</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>CBS Records</COMPANY>
+</CD>
+<CD>
+<TITLE>Greatest Hits</TITLE>
+<ARTIST>Dolly Parton</ARTIST>
+<COUNTRY>USA</COUNTRY>
+<COMPANY>RCA</COMPANY>
+</CD>
+</Catalog>

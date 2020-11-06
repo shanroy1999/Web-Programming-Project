@@ -1,0 +1,2540 @@
+WEEK 10 : Project Code
+
+----------------------------------------
+CODE :
+
+[FILE : index.html]
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travelix</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="./images/logo.png" alt="" class="logo-image">
+                </a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#offer" class="nav-link">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="hero">
+            <div class="container">
+                <div class="main-heading">
+                    <h1 class="title">Discover</h1>
+                    <h2 class="subtitle">Luxury Hotels</h2>
+                </div>
+                <a href="#explore" class="btn btn-gradient">Explore Now
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <section class="booking">
+            <div class="container">
+                <form action="" class="form book-form">
+                    <div class="input-group">
+                        <label for="destination" class="input-label">Destination</label>
+                        <input type="text" class="input" id="destination" placeholder="Italy">
+                    </div>
+                    <div class="input-group">
+                        <label for="check-in" class="input-label">Check-in</label>
+                        <input type="date" class="input" id="check-in">
+                    </div>
+                    <div class="input-group">
+                        <label for="check-out" class="input-label">Check-out</label>
+                        <input type="date" class="input" id="check-out">
+                    </div>
+                    <div class="input-group">
+                        <label for="adults" class="input-label">Adults</label>
+                        <select class="options" id="adults">
+                            <option value="0">0</option>
+                            <option value="0">1</option>
+                            <option value="0">2</option>
+                            <option value="0">3</option>
+                            <option value="0">4</option>
+                            <option value="0">5</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="children" class="input-label">Children</label>
+                        <select class="options" id="children">
+                            <option value="0">0</option>
+                            <option value="0">1</option>
+                            <option value="0">2</option>
+                            <option value="0">3</option>
+                            <option value="0">4</option>
+                            <option value="0">5</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn form-btn btn-purple">Search
+                        <span class="dots">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="hotels">
+            <div class="container">
+                <h5 class="section-head">
+                    <span class="heading" id="explore">Explore</span>
+                    <span class="sub-heading">Our beautiful hotels</span>
+                </h5>
+                <div class="grid">
+                    <div class="grid-item featured-hotels">
+                        <img src="./images/hotel_astro_resort.jpg" alt="" class="hotel-image">
+                        <h5 class="hotel-name">Astro Hotel</h5>
+                        <span class="hotel-price">From $200/Night</span>
+                        <div class="hotel-rating">
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star-half rating"></i>
+                        </div>
+                        <a href="#" class="btn btn-gradient">Book Now
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </a>
+                    </div>
+                    <div class="grid-item featured-hotels">
+                        <img src="./images/hotel_the_enchanted_garden.jpg" alt="" class="hotel-image">
+                        <h5 class="hotel-name">Enchanted Garden</h5>
+                        <span class="hotel-price">From $250/Night</span>
+                        <div class="hotel-rating">
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                        </div>
+                        <a href="#" class="btn btn-gradient">Book Now
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </a>
+                    </div>
+                    <div class="grid-item featured-hotels">
+                        <img src="./images/hotel_the_paradise.jpg" alt="" class="hotel-image">
+                        <h5 class="hotel-name">The Paradise</h5>
+                        <span class="hotel-price">From $300/Night</span>
+                        <div class="hotel-rating">
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star rating"></i>
+                            <i class="fas fa-star-half rating"></i>
+                        </div>
+                        <a href="#" class="btn btn-gradient">Book Now
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer" id="offer">
+            <div class="container">
+                <div class="offer-content">
+                    <div class="discount">
+                        40% Off
+                    </div>
+                    <h5 class="hotel-name">The Paradise</h5>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <p class="paragraph">
+                        Get 40% off discount in this festive season and win two movie tickets free along with a free Safari Ride.
+                    </p>
+                    <a href="#" class="btn btn-gradient">Redeem Offer
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="rooms">
+            <div class="container">
+                <h5 class="section-head">
+                    <span class="heading">Luxurious</span>
+                    <span class="sub-heading">Affordable Rooms</span>
+                </h5>
+                <div class="grid rooms-grid">
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_1.jpg" alt="">
+                            <h5 class="room-name">Astro Hotel</h5>
+                        </div>
+                        <div class="room-info-wrap">
+                            <span class="room-price">$ 200 <span class="per-night">Per night</span></span>
+                            <p class="paragraph">Enjoy your day in the most luxorious and affordable rooms at Astro</p>
+                            <a href="#" class="btn rooms-btn">Book Now &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_2.jpg" alt="">
+                            <h5 class="room-name">Enchanted Garden</h5>
+                        </div>
+                        <div class="room-info-wrap">
+                            <span class="room-price">$ 250 <span class="per-night">Per night</span></span>
+                            <p class="paragraph">Enjoy your day in the most luxorious and affordable rooms at Astro</p>
+                            <a href="#" class="btn rooms-btn">Book Now &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_3.jpg" alt="">
+                            <h5 class="room-name">The Paradise</h5>
+                        </div>
+                        <div class="room-info-wrap">
+                            <span class="room-price">$ 300 <span class="per-night">Per night</span></span>
+                            <p class="paragraph">Enjoy your day in the most luxorious and affordable rooms at Astro</p>
+                            <a href="#" class="btn rooms-btn">Book Now &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_4.jpg" alt="">
+                            <h5 class="room-name">Le Meridien</h5>
+                        </div>
+                        <div class="room-info-wrap">
+                            <span class="room-price">$ 350 <span class="per-night">Per night</span></span>
+                            <p class="paragraph">Enjoy your day in the most luxorious and affordable rooms at Astro</p>
+                            <a href="#" class="btn rooms-btn">Book Now &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_5.jpg" alt="">
+                            <h5 class="room-name">Oberoi Hotel</h5>
+                        </div>
+                        <div class="room-info-wrap">
+                            <span class="room-price">$ 400 <span class="per-night">Per night</span></span>
+                            <p class="paragraph">Enjoy your day in the most luxorious and affordable rooms at Astro</p>
+                            <a href="#" class="btn rooms-btn">Book Now &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="grid-item featured-rooms">
+                        <div class="image-wrap">
+                            <img class="room-image" src="./images/room_6.jpg" alt="">
+                            <h5 class="room-name">The Resort Rio</h5>
+                        </div>
+                        <div class="room-info-wrap">
+                            <span class="room-price">$ 500 <span class="per-night">Per night</span></span>
+                            <p class="paragraph">Enjoy your day in the most luxorious and affordable rooms at Astro</p>
+                            <a href="#" class="btn rooms-btn">Book Now &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h5 class="section-head">
+                    <span class="heading">Contact</span>
+                    <span class="sub-heading">Get in touch with us</span>
+                </h5>
+                <div class="contact-content">
+                    <div class="traveler-wrap">
+                        <img src="./images/traveler.png" alt="">
+                    </div>
+                    <form action="" class="form contact-form">
+                        <div class="input-group-wrap">
+                            <div class="input-group">
+                                <input type="text" class="input" placeholder="Name" required>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="input" placeholder="E-mail" required>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                            <div class="input-group">
+                                <input type="text" class="input" placeholder="Subject" required>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-group">
+                                <textarea class="input" cols="30" rows="8" placeholder="content" required></textarea>
+                                <span class="bar"></span>
+                            </div>
+                        <button type="submit" class="btn form-btn btn-purple">Send Message
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-brand">
+                    <a href="index.html" class="logo">
+                        <img class="logo-image" src="./images/logo.png" alt="">
+                    </a>
+                    <div class="paragraph">
+                        We are a travel agency company with more than 13 years of experience in the industry. We provide our customers
+                        with the best experience and service and help them find their ideal hotel. We have a huge number of connections
+                        with the hotel chains around the World. For any service related queries please contact us or email us. For more
+                        updates please follow the links below.
+                    </div>
+                </div>
+                <div class="social-media-wrap">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-media">
+                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
+
+-------------------------------------------------------------------------
+
+[FILE : login.css]
+
+html {
+    background: url('./images/room_2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url('');
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login {
+    width: 350px;
+    height: 440px;
+    background: transparent;
+    background-color: #fcf7f7;
+    border-radius: 20px;
+    border-style: ridge;
+    color: #5a3636;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border: 10px solid #c5bbbb;
+    ;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: -50%;
+    position: absolute;
+    top: -10%;
+    left: calc(50% -50px);
+    left: 38%;
+}
+
+h1 {
+    margin: auto;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.login input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #645d5d;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+.login input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1a0f0f;
+    color: #cab7b7;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login input[type="submit"]:hover {
+    cursor: pointer;
+    background: #bd1616;
+    color: rgb(19, 202, 235);
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.login a:hover {
+    color: aquamarine;
+}
+
+/*Import the fonts used*/
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Custom properties*/
+:root {
+    --dark-color: #2d2c2c;
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, .7);
+    --purple-transparent-alt: rgba(53, 10, 79, .5);
+    --purple-light: #8f50fb;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+.header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--purple-transparent);
+    z-index: 999;
+}
+
+.header.active{
+    background-color: var(--purple-solid);
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    max-width: %;
+}
+
+.hamburger-menu{
+    font-size: 2.6rem;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+}
+
+.hamburger-menu .fa-times{
+    display: none;
+}
+
+.menu-open .hamburger-menu .fa-times{
+    display: block;
+}
+
+.menu-open .hamburger-menu .fa-bars{
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--purple-solid);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1400;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+
+.nav-link{
+    display: block;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+
+.nav-item:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
+.menu-open .nav-list{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url("./images/hero_background.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--purple-transparent-alt);
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+}
+
+.main-heading{
+    color: #fff;
+    line-height: 1;
+    text-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
+    margin-bottom: 2.5rem;
+}
+
+.title{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.subtitle{
+    font-size: 3.6rem;
+    font-weight: 300;
+    font-family: 'Courgette', cursive;
+}
+
+.btn{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem 3.5rem;
+    border: none;
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-gradient{
+    background-image: var(--gradient-color);
+}
+
+.btn-gradient:hover{
+    background-image: var(--gradient-color-alt);
+}
+
+.dots{
+    font-size: 2.4rem;
+    margin-left: 0.5rem;
+    opacity: .75;
+}
+
+.booking{
+    background-image: var(--gradient-color);
+}
+
+.input-group{
+    margin-bottom: 1.5rem;
+}
+
+.input-label{
+    display: block;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input,
+.options{
+    outline: none;
+    border: none;
+    width: 100%;
+    min-height: 4rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #a5a5a5;
+    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
+    resize: none;
+}
+
+::placeholder{
+    color: inherit;
+}
+
+.form-btn{
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.btn-purple{
+    background-color: var(--purple-solid);
+}
+
+.btn-purple:hover{
+    background-color: #56247f;
+}
+
+.section-head{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.heading{
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.sub-heading{
+    font-size: 1.7rem;
+    font-family: 'Courgette', cursive;
+    font-weight: 300;
+    color: #a5a5a5;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-hotels{
+    height: 35rem;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.featured-hotels::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-transparent-alt);
+    z-index: -1;
+}
+
+.hotel-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.hotel-name{
+    font-size: 2.6rem;
+}
+
+.hotel-price{
+    font-size: 1.8rem;
+}
+
+.hotel-rating{
+    margin: 1rem 0 2.5rem;
+}
+
+.rating{
+    color: var(--yellow-solid);
+}
+
+.offer{
+    background: linear-gradient(to right, rgba(215, 158, 44, .8), rgba(143, 80, 251, .8)),
+    url("./images/the_paradise_bg.jpg") bottom center no-repeat;
+    background-size: cover;
+}
+
+.offer-content{
+    background-color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.discount{
+    background-color: var(--yellow-solid);
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    font-weight: bold;
+    left: 0;
+    text-transform: uppercase;
+    outline: 2px solid var(--yellow-solid);
+    outline-offset: .5rem;
+}
+
+.paragraph{
+    color: #a5a5a5;
+    margin-bottom: 2.5rem;
+}
+
+.rooms{
+    background-color: #f2f6f9;
+}
+
+.image-wrap{
+    position: relative;
+    height: 25rem;
+}
+
+.image-wrap::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-transparent-alt);
+}
+
+.room-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room-name{
+    font-size: 2.5rem;
+    background-color: var(--yellow-solid);
+    color: #fff;
+    padding: 0.5rem 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 2.5rem;
+    z-index: 10;
+}
+
+.room-price{
+    display: block;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: var(--yellow-solid);
+}
+
+.per-night{
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.rooms-btn{
+    color: var(--dark-color);
+    padding: 0;
+    transition: color .5s;
+}
+
+.rooms-btn:hover{
+    color: var(--yellow-solid);
+}
+
+.contact-content{
+    display: flex;
+    justify-content: center;
+}
+
+.traveler-wrap{
+    display: none;
+}
+
+.contact-form{
+    width: 100%;
+    background-image: var(--gradient-color);
+    padding: 2.5rem;
+}
+
+.contact-form .input{
+    display: block;
+    background-color: transparent;
+    color: #fff;
+    font-weight: normal;
+    border-bottom: 2px solid #fff;
+    padding-left: 0;
+}
+
+.bar{
+    display: block;
+    position: relative;
+}
+
+.bar::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--purple-light);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.contact-form .input:focus + .bar::after{
+    transform: scaleX(1);
+}
+
+.footer{
+    padding: 5rem 0;
+    background-color: var(--purple-solid);
+    color: #fff;
+}
+
+.footer-content-brand{
+    margin-bottom: 5rem;
+}
+
+.footer .paragraph{
+    color: inherit;
+}
+
+.footer-heading{
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.social-media{
+    display: flex;
+}
+
+.sm-link{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: 2px solid var(--yellow-solid);
+    border-radius: 50%;
+    display: flex;
+    margin-right: 1rem;
+    transition: background-color .5s;
+}
+
+.sm-link:hover{
+    background-color: var(--yellow-solid);
+    color: var(--dark-color);
+}
+
+.sm-link i{
+    margin: auto;
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        height: 10rem;
+    }
+
+    header.active{
+        height: 6rem;
+    }
+
+    .title{
+        font-size: 8rem;
+    }
+
+    .footer{
+        overflow-x: hidden;
+    }
+
+    .contact-content{
+        justify-content: space-between;
+    }
+
+    .traveler-wrap{
+        display: block;
+        flex: 0 0 45%;
+    }
+
+    .traveler-wrap img{
+        width: 100%;
+    }
+
+    .contact-form{
+        flex: 0 0 50%;
+        align-self: flex-start;
+    }
+
+    .input-group-wrap{
+        display: flex;
+    }
+
+    .input-group-wrap .input-group{
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    .input-group-wrap .input-group:last-child{
+        margin-right: 0;
+    }
+
+    .footer-content{
+        display: flex;
+    }
+
+    .footer-content-brand{
+        margin-bottom: 0;
+        flex: 0 0 60%;
+    }
+
+    .footer .paragraph{
+        margin-top: 2.5rem;
+    }
+
+    .footer-heading{
+        margin-bottom: 5rem;
+    }
+
+    .social-media-wrap{
+        flex: 0 0 40%;
+        margin-left: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    section: not(.booking){
+        padding: 10rem 0;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .nav-list{
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: initial;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .nav-item:not(:last-child){
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+
+    .nav-link{
+        font-size: 1.3rem;
+        font-weight: normal;
+        transition: color .5s;
+    }
+
+    .nav-link:hover{
+        color: var(--yellow-solid);
+    }
+
+    .title{
+        font-size: 12rem;
+    }
+
+    .sub-title{
+        font-size: 4.6rem;
+    }
+
+    .book-form{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .book-form .input-group{
+        margin-bottom: 0;
+    }
+
+    .book-form .input-group:first-child{
+        flex: 0 0 20%;
+    }
+
+    .input,
+    .options{
+        min-width: 10rem;
+    }
+
+    .rooms-grid{
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-gap: 8rem;
+    }
+
+    .featured-rooms{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .room-info-wrap{
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .book-form .input-group:first-child{
+        flex: 0 0 30%;
+    }
+}
+
+-----------------------------------------------------------------------------------
+
+[FILE : login.html]
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="my.js" type="text/javascript">
+    </script>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+
+<body>
+<!--HEADER-->
+  <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="./images/logo.png" alt="" class="logo-image">
+                </a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!--LOGIN FORM-->
+
+    <div class="login">
+        <img src="./images/icons8-male-user-96.png" alt="image" class="avatar">
+        <h1>Login Here</h1>
+        <form action="">
+            <p>Username</p>
+            <input type="text" name="" id="" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" class="form-control" name="" id="" placeholder="Enter Password">
+            <input type="submit" name="" value="Login"><br>
+            <a href="">Lost Your Password</a><br>
+            <a href="">Don't have an account</a>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
+
+--------------------------------------------------------------------------------
+
+[FILE : main.js]
+
+//Selectors
+let header = document.querySelector('.header');
+let hamburgerMenu = document.querySelector('.hamburger-menu');
+
+hamburgerMenu.addEventListener('click', function(){
+    header.classList.toggle('menu-open');
+})
+
+window.addEventListener('scroll', function(){
+    let windowPosition = window.scrollY > 0;
+    header.classList.toggle('active', windowPosition);
+})
+
+-----------------------------------------------------------------------------------
+
+[FILE: styles.css]
+
+/*Import the fonts used*/
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Custom properties*/
+:root {
+    --dark-color: #2d2c2c;
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, .7);
+    --purple-transparent-alt: rgba(53, 10, 79, .5);
+    --purple-light: #8f50fb;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+.header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--purple-transparent);
+    z-index: 999;
+}
+
+.header.active{
+    background-color: var(--purple-solid);
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    max-width: 80%;
+}
+
+.hamburger-menu{
+    font-size: 2.6rem;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+}
+
+.hamburger-menu .fa-times{
+    display: none;
+}
+
+.menu-open .hamburger-menu .fa-times{
+    display: block;
+}
+
+.menu-open .hamburger-menu .fa-bars{
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--purple-solid);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1400;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+
+.nav-link{
+    display: block;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+
+.nav-item:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
+.menu-open .nav-list{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url("./images/hero_background.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--purple-transparent-alt);
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+}
+
+.main-heading{
+    color: #fff;
+    line-height: 1;
+    text-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
+    margin-bottom: 2.5rem;
+}
+
+.title{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.subtitle{
+    font-size: 3.6rem;
+    font-weight: 300;
+    font-family: 'Courgette', cursive;
+}
+
+.btn{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem 3.5rem;
+    border: none;
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-gradient{
+    background-image: var(--gradient-color);
+}
+
+.btn-gradient:hover{
+    background-image: var(--gradient-color-alt);
+}
+
+.dots{
+    font-size: 2.4rem;
+    margin-left: 0.5rem;
+    opacity: .75;
+}
+
+.booking{
+    background-image: var(--gradient-color);
+}
+
+.input-group{
+    margin-bottom: 1.5rem;
+}
+
+.input-label{
+    display: block;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input,
+.options{
+    outline: none;
+    border: none;
+    width: 100%;
+    min-height: 4rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #a5a5a5;
+    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
+    resize: none;
+}
+
+::placeholder{
+    color: inherit;
+}
+
+.form-btn{
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.btn-purple{
+    background-color: var(--purple-solid);
+}
+
+.btn-purple:hover{
+    background-color: #56247f;
+}
+
+.section-head{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.heading{
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.sub-heading{
+    font-size: 1.7rem;
+    font-family: 'Courgette', cursive;
+    font-weight: 300;
+    color: #a5a5a5;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-hotels{
+    height: 35rem;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.featured-hotels::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-transparent-alt);
+    z-index: -1;
+}
+
+.hotel-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.hotel-name{
+    font-size: 2.6rem;
+}
+
+.hotel-price{
+    font-size: 1.8rem;
+}
+
+.hotel-rating{
+    margin: 1rem 0 2.5rem;
+}
+
+.rating{
+    color: var(--yellow-solid);
+}
+
+.offer{
+    background: linear-gradient(to right, rgba(215, 158, 44, .8), rgba(143, 80, 251, .8)),
+    url("./images/the_paradise_bg.jpg") bottom center no-repeat;
+    background-size: cover;
+}
+
+.offer-content{
+    background-color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.discount{
+    background-color: var(--yellow-solid);
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    font-weight: bold;
+    left: 0;
+    text-transform: uppercase;
+    outline: 2px solid var(--yellow-solid);
+    outline-offset: .5rem;
+}
+
+.paragraph{
+    color: #a5a5a5;
+    margin-bottom: 2.5rem;
+}
+
+.rooms{
+    background-color: #f2f6f9;
+}
+
+.image-wrap{
+    position: relative;
+    height: 25rem;
+}
+
+.image-wrap::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-transparent-alt);
+}
+
+.room-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room-name{
+    font-size: 2.5rem;
+    background-color: var(--yellow-solid);
+    color: #fff;
+    padding: 0.5rem 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 2.5rem;
+    z-index: 10;
+}
+
+.room-price{
+    display: block;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: var(--yellow-solid);
+}
+
+.per-night{
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.rooms-btn{
+    color: var(--dark-color);
+    padding: 0;
+    transition: color .5s;
+}
+
+.rooms-btn:hover{
+    color: var(--yellow-solid);
+}
+
+.contact-content{
+    display: flex;
+    justify-content: center;
+}
+
+.traveler-wrap{
+    display: none;
+}
+
+.contact-form{
+    width: 100%;
+    background-image: var(--gradient-color);
+    padding: 2.5rem;
+}
+
+.contact-form .input{
+    display: block;
+    background-color: transparent;
+    color: #fff;
+    font-weight: normal;
+    border-bottom: 2px solid #fff;
+    padding-left: 0;
+}
+
+.bar{
+    display: block;
+    position: relative;
+}
+
+.bar::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--purple-light);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.contact-form .input:focus + .bar::after{
+    transform: scaleX(1);
+}
+
+.footer{
+    padding: 5rem 0;
+    background-color: var(--purple-solid);
+    color: #fff;
+}
+
+.footer-content-brand{
+    margin-bottom: 5rem;
+}
+
+.footer .paragraph{
+    color: inherit;
+}
+
+.footer-heading{
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.social-media{
+    display: flex;
+}
+
+.sm-link{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: 2px solid var(--yellow-solid);
+    border-radius: 50%;
+    display: flex;
+    margin-right: 1rem;
+    transition: background-color .5s;
+}
+
+.sm-link:hover{
+    background-color: var(--yellow-solid);
+    color: var(--dark-color);
+}
+
+.sm-link i{
+    margin: auto;
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        height: 10rem;
+    }
+
+    header.active{
+        height: 6rem;
+    }
+
+    .title{
+        font-size: 8rem;
+    }
+
+    .footer{
+        overflow-x: hidden;
+    }
+
+    .contact-content{
+        justify-content: space-between;
+    }
+
+    .traveler-wrap{
+        display: block;
+        flex: 0 0 45%;
+    }
+
+    .traveler-wrap img{
+        width: 100%;
+    }
+
+    .contact-form{
+        flex: 0 0 50%;
+        align-self: flex-start;
+    }
+
+    .input-group-wrap{
+        display: flex;
+    }
+
+    .input-group-wrap .input-group{
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    .input-group-wrap .input-group:last-child{
+        margin-right: 0;
+    }
+
+    .footer-content{
+        display: flex;
+    }
+
+    .footer-content-brand{
+        margin-bottom: 0;
+        flex: 0 0 60%;
+    }
+
+    .footer .paragraph{
+        margin-top: 2.5rem;
+    }
+
+    .footer-heading{
+        margin-bottom: 5rem;
+    }
+
+    .social-media-wrap{
+        flex: 0 0 40%;
+        margin-left: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    section: not(.booking){
+        padding: 10rem 0;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .nav-list{
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: initial;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .nav-item:not(:last-child){
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+
+    .nav-link{
+        font-size: 1.3rem;
+        font-weight: normal;
+        transition: color .5s;
+    }
+
+    .nav-link:hover{
+        color: var(--yellow-solid);
+    }
+
+    .title{
+        font-size: 12rem;
+    }
+
+    .sub-title{
+        font-size: 4.6rem;
+    }
+
+    .book-form{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .book-form .input-group{
+        margin-bottom: 0;
+    }
+
+    .book-form .input-group:first-child{
+        flex: 0 0 20%;
+    }
+
+    .input,
+    .options{
+        min-width: 10rem;
+    }
+
+    .rooms-grid{
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-gap: 8rem;
+    }
+
+    .featured-rooms{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .room-info-wrap{
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .book-form .input-group:first-child{
+        flex: 0 0 30%;
+    }
+}/*Import the fonts used*/
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Custom properties*/
+:root {
+    --dark-color: #2d2c2c;
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, .7);
+    --purple-transparent-alt: rgba(53, 10, 79, .5);
+    --purple-light: #8f50fb;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+.header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--purple-transparent);
+    z-index: 999;
+}
+
+.header.active{
+    background-color: var(--purple-solid);
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    max-width: 80%;
+}
+
+.hamburger-menu{
+    font-size: 2.6rem;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+}
+
+.hamburger-menu .fa-times{
+    display: none;
+}
+
+.menu-open .hamburger-menu .fa-times{
+    display: block;
+}
+
+.menu-open .hamburger-menu .fa-bars{
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--purple-solid);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1400;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+
+.nav-link{
+    display: block;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+
+.nav-item:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
+.menu-open .nav-list{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url("./images/hero_background.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--purple-transparent-alt);
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+}
+
+.main-heading{
+    color: #fff;
+    line-height: 1;
+    text-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
+    margin-bottom: 2.5rem;
+}
+
+.title{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.subtitle{
+    font-size: 3.6rem;
+    font-weight: 300;
+    font-family: 'Courgette', cursive;
+}
+
+.btn{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem 3.5rem;
+    border: none;
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-gradient{
+    background-image: var(--gradient-color);
+}
+
+.btn-gradient:hover{
+    background-image: var(--gradient-color-alt);
+}
+
+.dots{
+    font-size: 2.4rem;
+    margin-left: 0.5rem;
+    opacity: .75;
+}
+
+.booking{
+    background-image: var(--gradient-color);
+}
+
+.input-group{
+    margin-bottom: 1.5rem;
+}
+
+.input-label{
+    display: block;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.input,
+.options{
+    outline: none;
+    border: none;
+    width: 100%;
+    min-height: 4rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #a5a5a5;
+    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
+    resize: none;
+}
+
+::placeholder{
+    color: inherit;
+}
+
+.form-btn{
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.btn-purple{
+    background-color: var(--purple-solid);
+}
+
+.btn-purple:hover{
+    background-color: #56247f;
+}
+
+.section-head{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.heading{
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.sub-heading{
+    font-size: 1.7rem;
+    font-family: 'Courgette', cursive;
+    font-weight: 300;
+    color: #a5a5a5;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-hotels{
+    height: 35rem;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.featured-hotels::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-transparent-alt);
+    z-index: -1;
+}
+
+.hotel-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.hotel-name{
+    font-size: 2.6rem;
+}
+
+.hotel-price{
+    font-size: 1.8rem;
+}
+
+.hotel-rating{
+    margin: 1rem 0 2.5rem;
+}
+
+.rating{
+    color: var(--yellow-solid);
+}
+
+.offer{
+    background: linear-gradient(to right, rgba(215, 158, 44, .8), rgba(143, 80, 251, .8)),
+    url("./images/the_paradise_bg.jpg") bottom center no-repeat;
+    background-size: cover;
+}
+
+.offer-content{
+    background-color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.discount{
+    background-color: var(--yellow-solid);
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    font-weight: bold;
+    left: 0;
+    text-transform: uppercase;
+    outline: 2px solid var(--yellow-solid);
+    outline-offset: .5rem;
+}
+
+.paragraph{
+    color: #a5a5a5;
+    margin-bottom: 2.5rem;
+}
+
+.rooms{
+    background-color: #f2f6f9;
+}
+
+.image-wrap{
+    position: relative;
+    height: 25rem;
+}
+
+.image-wrap::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-transparent-alt);
+}
+
+.room-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room-name{
+    font-size: 2.5rem;
+    background-color: var(--yellow-solid);
+    color: #fff;
+    padding: 0.5rem 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 2.5rem;
+    z-index: 10;
+}
+
+.room-price{
+    display: block;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: var(--yellow-solid);
+}
+
+.per-night{
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.rooms-btn{
+    color: var(--dark-color);
+    padding: 0;
+    transition: color .5s;
+}
+
+.rooms-btn:hover{
+    color: var(--yellow-solid);
+}
+
+.contact-content{
+    display: flex;
+    justify-content: center;
+}
+
+.traveler-wrap{
+    display: none;
+}
+
+.contact-form{
+    width: 100%;
+    background-image: var(--gradient-color);
+    padding: 2.5rem;
+}
+
+.contact-form .input{
+    display: block;
+    background-color: transparent;
+    color: #fff;
+    font-weight: normal;
+    border-bottom: 2px solid #fff;
+    padding-left: 0;
+}
+
+.bar{
+    display: block;
+    position: relative;
+}
+
+.bar::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--purple-light);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.contact-form .input:focus + .bar::after{
+    transform: scaleX(1);
+}
+
+.footer{
+    padding: 5rem 0;
+    background-color: var(--purple-solid);
+    color: #fff;
+}
+
+.footer-content-brand{
+    margin-bottom: 5rem;
+}
+
+.footer .paragraph{
+    color: inherit;
+}
+
+.footer-heading{
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.social-media{
+    display: flex;
+}
+
+.sm-link{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: 2px solid var(--yellow-solid);
+    border-radius: 50%;
+    display: flex;
+    margin-right: 1rem;
+    transition: background-color .5s;
+}
+
+.sm-link:hover{
+    background-color: var(--yellow-solid);
+    color: var(--dark-color);
+}
+
+.sm-link i{
+    margin: auto;
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        height: 10rem;
+    }
+
+    header.active{
+        height: 6rem;
+    }
+
+    .title{
+        font-size: 8rem;
+    }
+
+    .footer{
+        overflow-x: hidden;
+    }
+
+    .contact-content{
+        justify-content: space-between;
+    }
+
+    .traveler-wrap{
+        display: block;
+        flex: 0 0 45%;
+    }
+
+    .traveler-wrap img{
+        width: 100%;
+    }
+
+    .contact-form{
+        flex: 0 0 50%;
+        align-self: flex-start;
+    }
+
+    .input-group-wrap{
+        display: flex;
+    }
+
+    .input-group-wrap .input-group{
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    .input-group-wrap .input-group:last-child{
+        margin-right: 0;
+    }
+
+    .footer-content{
+        display: flex;
+    }
+
+    .footer-content-brand{
+        margin-bottom: 0;
+        flex: 0 0 60%;
+    }
+
+    .footer .paragraph{
+        margin-top: 2.5rem;
+    }
+
+    .footer-heading{
+        margin-bottom: 5rem;
+    }
+
+    .social-media-wrap{
+        flex: 0 0 40%;
+        margin-left: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    section: not(.booking){
+        padding: 10rem 0;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .nav-list{
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: initial;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .nav-item:not(:last-child){
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+
+    .nav-link{
+        font-size: 1.3rem;
+        font-weight: normal;
+        transition: color .5s;
+    }
+
+    .nav-link:hover{
+        color: var(--yellow-solid);
+    }
+
+    .title{
+        font-size: 12rem;
+    }
+
+    .sub-title{
+        font-size: 4.6rem;
+    }
+
+    .book-form{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .book-form .input-group{
+        margin-bottom: 0;
+    }
+
+    .book-form .input-group:first-child{
+        flex: 0 0 20%;
+    }
+
+    .input,
+    .options{
+        min-width: 10rem;
+    }
+
+    .rooms-grid{
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-gap: 8rem;
+    }
+
+    .featured-rooms{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .room-info-wrap{
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .book-form .input-group:first-child{
+        flex: 0 0 30%;
+    }
+}
+
+-----------------------------------------------------------------------------------
+
+PROJECT WEBSITE : https://shanroy1999.github.io/Web-Programming-Project/
+MADE BY :
+1> SHANTANU ROY - RA1711003010835
+2> MIHIR SHAILENDRA LOVEKAR - RA1711003010811
+3> UJJWAL DADHICH - RA1711003010905

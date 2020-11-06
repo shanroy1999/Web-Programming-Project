@@ -1,0 +1,118 @@
+WEEK 2 : HTML page containing Media Elements
+
+CODE :
+
+-----------------------------------------------
+[FILE : media.html]
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: white;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+.all-players {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-players > h1, .player {
+  margin: 10px;
+  padding: 5px;
+}
+
+.player {
+  background: white;
+}
+
+.player > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+</style>
+</head>
+<body>
+
+<article class="all-players">
+  <h1>Top 3 Tennis Players in 2020</h1>
+  <article class="browser">
+    <h2>1. Novak Djokovic</h2>
+    <p>
+      <ul>
+        <li>Age: 33 years</li>
+        <li>ATP Ranking: 1</li>
+        <li>Grand Slam Titles: 17</li>
+      </ul>
+  </p>
+       <iframe width="560" height="270" src="https://www.youtube.com/embed/3GAbVGHifQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <aside>
+   <p>Top 10 Novak Djokovic Moments that will blow your mind</p>
+   </aside>
+  </article>
+  <article class="player">
+    <h2>2. Rafael Nadal</h2>
+    <p>
+      <ul>
+        <li>Age: 34 years</li>
+        <li>ATP Ranking: 2</li>
+        <li>Grand Slam Titles: 20</li>
+      </ul>
+    </p>
+       <iframe width="560" height="270" src="https://www.youtube.com/embed/3XwasfJ4DXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <aside>
+   <p>Rafael Nadal - All 20 Grand Slam Championship Points</p>
+   </aside>
+  </article>
+  <article class="player">
+    <h2>3. Roger Federer</h2>
+    <p>
+      <ul>
+        <li>Age: 39 years</li>
+        <li>ATP Ranking: 4</li>
+        <li>Grand Slam Titles: 20</li>
+      </ul>
+    </p>
+       <iframe width="560" height="270" src="https://www.youtube.com/embed/QvTA3VrPkzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <aside>
+   <p>10 times Roger Federer went God Mode</p>
+   </aside>
+  </article>
+</article>
+<section>
+  <h1>ATP Tour</h1>
+  <p>ATP Tour is a worldwide top-tier tennis tour for men organized by the Association of Tennis Professionals. The Second Tier-Tour is the ATP Challenger Tour and the third tier is ITF Men's Circuit.</p>
+  <a href="https://www.atptour.com/">atptour.com</a>
+</section>
+<footer>
+  <p>Author: Ujjwal Dadhich</p>
+  <p><a href="mailto:ujjwaldadhich08@gmail.com">ujjwaldadhich08@gmail.com</a></p><br>
+</footer>
+<nav>
+  <a href="https://www.youtube.com/user/ATPWorldTour">ATP World Tour Channel</a> |
+  <a href="https://www.youtube.com/user/ATP">ATP Tennis TV Channel</a>
+</nav>
+</body>
+</html>
+
+---------------------------------------------------------------------------

@@ -1,0 +1,187 @@
+AIM : CREATE A SIMPLE WEB PAGE USING HTML5 SEMANTIC AND STRUCTURAL ELEMENTS
+
+SEMANTIC TAGS USED : 
+1) <nav>
+2) <footer>
+3) <header>
+4) <section>
+5) <aside>
+6) <main>
+7) <article>
+8) <figure>
+9) <figcaption>
+
+------------------------------------------------------------------------------------------
+
+CODE :
+
+[FILE : symantics.html]
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Semantic HTML Elements</title>
+</head>
+<body>
+  <!-- navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- header -->
+  <header>
+    <h1>Vortex Technologies</h1>
+    <figure>
+    <img src="https://content.techgig.com/photo/msid-77239888/Want-to-become-a-CTO-in-future-Master-your-Data-Science-skills.jpg?124363" alt="main banner">
+    <figcaption>Technology</figcaption>
+    </figure>
+    <button>Find out more</button>
+  </header>
+
+  <main>
+    <!-- about section -->
+    <article>
+      <h2>About Us</h2>
+      <p>We Provide the best services and make sure that the customers are happy with the product.
+      </p>
+    </article>
+
+    <!-- products section -->
+    <aside>
+      <h3>Our Services</h3>
+      <ul>
+        <li>SaaS, Cloud Tech</li>
+        <li>Computer Vision</li>
+        <li>Game Dev</li>
+        <li>Web Development</li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- contact -->
+  <section>
+    <h3>Get in Touch!</h3>
+    <form>
+      <label>Name:</label>
+      <input type="text">
+      <label>Email:</label>
+      <input type="email">
+      <label>Message:</label>
+      <textarea></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section>
+    <h1>Famous youtube channels for latest products</h1>
+    <p><a href="https://www.youtube.com/c/mkbhd/videos">MKBHD(Marques Brownlee)</a></p>
+    <p><a href="https://www.youtube.com/user/unboxtherapy">Unbox Therapy</a></p>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <p>Copyright &copy; 2020</p>
+  </footer>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------
+
+[FILE : style.css]
+
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+        sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+label,
+input[type="submit"] {
+    display: block;
+}
+
+/* div styles */
+div {
+    color: red;
+    border: 3px solid red;
+    background-color: rgb(236, 189, 189);
+}
+
+div,
+nav,
+header,
+main,
+article,
+aside,
+section,
+footer {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+nav {
+    color: green;
+    border: 3px solid green;
+    background-color: palegreen;
+}
+
+header {
+    color: goldenrod;
+    border: 3px solid goldenrod;
+    background-color: khaki;
+}
+
+main {
+    color: blue;
+    background-color: lightskyblue;
+    border: 3px solid blue;
+    padding: 0;
+    display: flex;
+}
+
+article,
+aside {
+    color: blue;
+    background-color: cornflowerblue;
+    border: 3px solid blue;
+}
+
+article {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+}
+
+section {
+    color: indigo;
+    background-color: mediumpurple;
+    border: 3px solid indigo;
+}
+
+footer {
+    color: rgb(255, 86, 16);
+    border: 3px solid rgb(255, 86, 16);
+    background-color: orange;
+}
+
+------------------------------------------------------------------------------------------

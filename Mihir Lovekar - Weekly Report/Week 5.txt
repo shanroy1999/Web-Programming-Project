@@ -1,0 +1,69 @@
+WEEK 5 : Simple applications to demonstrate Servlets
+
+-------------------------------------------------------------
+CODE : servlet program to take 2 numbers as input and show the addition as result
+REQUIREMENTS : Tomcat Server 9.0, Eclipse JAVA EE for developers
+
+[FILE : index.html]
+
+<!DOCTYPE html>
+<html>
+<body>
+	<form action="addition">
+	
+		Enter 1st number : <input type="text" name="num1"><br>
+		Enter 2nd number : <input type="text" name="num2"><br>
+		
+		<input type="submit">
+	</form>
+</body>
+</html>
+
+-------------------------------------------
+
+[FILE : AddServlet.java]
+
+package com.shantanu;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class AddServlet extends HttpServlet
+{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7710445588363592566L;
+
+	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException
+	{
+		int i = Integer.parseInt(req.getParameter("num1"));
+		int j = Integer.parseInt(req.getParameter("num2"));
+		
+		int k = i+j;
+		PrintWriter out = res.getWriter();
+		
+		res.getWriter().println("result is " + k);
+	}
+}
+
+-------------------------------------------------
+
+[FILE : web.xml]
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <servlet>
+  	<servlet-name>project</servlet-name>
+  	<servlet-class>com.shantanu.AddServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>project</servlet-name>
+  	<url-pattern>/addition</url-pattern>
+  </servlet-mapping>
+</web-app>

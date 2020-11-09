@@ -1,4 +1,4 @@
-WEEK 9 : JSP in Eclipse
+WEEK 9 : JSP "Hello World" in Eclipse
 
 --------------------------------------
 

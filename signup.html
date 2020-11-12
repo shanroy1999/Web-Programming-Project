@@ -57,10 +57,10 @@
 
     <!--LOGIN FORM-->
 
-    <div class="login" method="post">
+    <div class="login">
         <img src="./images/icons8-male-user-96.png" alt="image" class="avatar">
         <h1>Sign Up Here</h1>
-        <form action="signup.php">
+        <form action="signup.php" method="post">
             <p>Full name</p>
             <input type="text" class="form-control" name="firstname" id="" placeholder="Enter your Full Name" required>
             <p>Username</p>
@@ -70,9 +70,9 @@
             <p>Email</p>
             <input type="text" class="form-control" name="email" id="" placeholder="Enter email" required>
             <p>Password</p>
-            <input type="password" class="form-control" name="" id="" placeholder="Enter Password" required>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password" required>
             <p>Confirm Password</p>
-            <input type="password" class="form-control" name="" id="" placeholder="Re-Enter Password" required>
+            <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Re-Enter Password" required>
             <p>Phone Number</p>
             <input type="tel" class="form-control" name="phone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" placeholder="Enter your Phone Number" required>
             <input type="submit" name="signup" value="Signup"><br>

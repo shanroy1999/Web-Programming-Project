@@ -16,7 +16,7 @@ body {
 
 .login {
     width: 400px;
-    height: 700px;
+    height: 900px;
     background: transparent;
     background-color: #fcf7f7;
     border-radius: 30px;
@@ -37,7 +37,7 @@ body {
     height: 80px;
     border-radius: -50%;
     position: absolute;
-    top: -10%;
+    top: -2%;
     left: calc(50% -50px);
     left: 38%;
 }

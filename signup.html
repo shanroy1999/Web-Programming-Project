@@ -61,22 +61,36 @@
         <img src="./images/icons8-male-user-96.png" alt="image" class="avatar">
         <h1>Sign Up Here</h1>
         <form action="signup.php" method="post">
-            <p>Full name</p>
+            <h4>Full name</h4>
             <input type="text" class="form-control" name="firstname" id="" placeholder="Enter your Full Name" required>
-            <p>Username</p>
+            <h4>Username</h4>
             <input type="text" class="form-control" name="username" id="" placeholder="Enter Username" required>
-            <p>Date of Birth</p>
+            <h4>Date of Birth</h4>
             <input type="date" class="form-control" name="username" id="" placeholder="DOB" required>
-            <p>Email</p>
+            <h4>Email</h4>
             <input type="text" class="form-control" name="email" id="" placeholder="Enter email" required>
-            <p>Password</p>
+            <h4>Password</h4>
             <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password" required>
-            <p>Confirm Password</p>
-            <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Re-Enter Password" required>
-            <p>Phone Number</p>
+            <h4>Phone Number</h4><p>(Format : XXXX-XX-XXXX)</p>
             <input type="tel" class="form-control" name="phone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" placeholder="Enter your Phone Number" required>
+            <h4>Address</h4>
+            <input type="text" class="form-control" name="address" id="" placeholder="Enter your Permanent Address" required>
+            <h4><label for="country">Nationality</label></h4>
+            <select id="country">
+                <option value="country">Select Country</option>
+                <option value="us">USA</option>
+                <option value="aus">Australia</option>
+                <option value="nz">New Zeland</option>
+                <option value="can">Canada</option>
+                <option value="ind">India</option>
+                <option value="srl">Sri Lanka</option>
+                <option value="uk">UK</option>
+                <option value="swz">Switzerland</option>
+            </select required>
+            <h4>Zip Code</h4>
+            <input type="text" class="form-control" name="zip" id="" placeholder="Enter your Zip Code" required>
             <input type="submit" name="signup" value="Signup"><br>
-            
+
         </form>
     </div>
 </body>

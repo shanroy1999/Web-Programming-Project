@@ -60,7 +60,7 @@
     <div class="login">
         <img src="./images/icons8-male-user-96.png" alt="image" class="avatar">
         <h1>Sign Up Here</h1>
-        <form action="signedup.html">
+        <form action="signedup.html" method="post">
             <h4>Full name</h4>
             <input type="text" class="form-control" name="firstname" id="" placeholder="Enter your Full Name" required>
             <h4>Username</h4>
@@ -76,7 +76,7 @@
             <h4>Address</h4>
             <input type="text" class="form-control" name="address" id="" placeholder="Enter your Permanent Address" required>
             <h4><label for="country">Nationality</label></h4>
-            <select id="country">
+            <select id="country" required>
                 <option value="country">Select Country</option>
                 <option value="us">USA</option>
                 <option value="aus">Australia</option>
@@ -86,7 +86,7 @@
                 <option value="srl">Sri Lanka</option>
                 <option value="uk">UK</option>
                 <option value="swz">Switzerland</option>
-            </select required>
+            </select>
             <h4>Zip Code</h4>
             <input type="text" class="form-control" name="zip" id="" placeholder="Enter your Zip Code" required>
             <input type="submit" name="signup" value="Signup"><br>

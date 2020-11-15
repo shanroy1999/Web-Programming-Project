@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('./images/beach2.jpg');
+    background-position: center;
+}
+#form{
+    margin: auto;
+    background-color: #000;
+    height: 800px;
+    width: 800px;
+    margin-top: 100px;
+    opacity: 0.7;
+    border-radius: 50px;
+}
+#first-group{
+    width: 800px;
+    margin-top: 38px;
+}
+#content{
+    margin: 15px;
+    margin-left: 8px;
+    padding: 5px;
+}
+
+button[type="submit"]{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 760px;
+    background: #1a0f0f;
+    color: #cab7b7;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    background: #bd1616;
+    color: rgb(19, 202, 235);
+    border-radius: 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+</head>
+<body>
+    <div class="container">
+        <form class="form-group" action="payment.html">
+            <div id="form">
+                <h1 class="text-white text-center">Book Now</h1>
+                <div id="first-group">
+                    <div id="content">
+                        <h4 class="text-white text-center">Date From</h4>
+                        <input type="date" class="form-control" id="input" placeholder="Date From" required>
+                    </div>
+                    <div id="content">
+                        <h4 class="text-white text-center">Date To</h4>
+                        <input type="date" class="form-control" id="input" placeholder="Date To" required>
+                    </div>
+                    <div id="content">
+                        <h4 class="text-white text-center">Number of Guests</h4>
+                        <select id="input-group" class="form-control" required>
+                            <option value="">No. of guests</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                    </div>
+                    <div id="content">
+                        <h4 class="text-white text-center">Type of Room</h4>
+                        <select id="input-group" class="form-control" required>
+                            <option value="">Select Room Type</option>
+                            <option value="">Single</option>
+                            <option value="">Double</option>
+                            <option value="">Triple</option>
+                            <option value="">Quad</option>
+                        </select>
+                    </div>
+                    <div id="content">
+                        <h4 class="text-white text-center">Number of Rooms</h4>
+                        <select id="input-group" class="form-control" required>
+                            <option value="">Select Number of Rooms</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <div id="content">
+                        <h4 class="text-white text-center">Any other Message</h4>
+                        <input type="textarea" class="form-control" id="input" placeholder="Type your message">
+                    </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="form-control" name="proceed">Proceed to Payment</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

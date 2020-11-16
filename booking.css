@@ -101,6 +101,10 @@ section{
     margin: 0 auto;
 }
 
+.logo img{
+    max-width: 80%;
+}
+
 body{
     background-image: url('./images/beach2.jpg');
     background-position: center;

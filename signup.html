@@ -61,17 +61,17 @@
         <img src="./images/icons8-male-user-96.png" alt="image" class="avatar">
         <h1>Sign Up Here</h1>
         <form action="login.html" method="post">
-            <h4 style="float: left">Full name</h4><h5 style="float: right">(Must lie between 5-20 characters)</h5>
+            <div style="clear: both"><h4 style="float: left">Full name</h4><h5 style="float: right">(Must lie between 5-20 characters)</h5></div>
             <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Enter your Full Name" minlength="5" maxlength="20" required>
-            <h4 style="float: left">Username</h4><h5 style="float: right">(Must lie between 5-20 characters)</h5>
+            <div style="clear: both"><h4 style="float: left">Username</h4><h5 style="float: right">(Must lie between 5-20 characters)</h5></div>
             <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username" minlength="5" maxlength="20" required>
             <h4>Date of Birth</h4>
             <input type="date" class="form-control" name="dob" id="dob" placeholder="DOB" required>
             <h4>Email</h4>
             <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" pattern=".+@gmail.com" required>
-            <h4 style="float: left">Password</h4><h5 style="float: right">(Must Contain atleast 1 lowercase letter, 1 uppercase letter, a number, minimum 8 characters)</h5>
+            <div style="clear: both"><h4 style="float: left">Password</h4><h5 style="float: right">(Must Contain atleast 1 lowercase letter, 1 uppercase letter, a number, minimum 8 characters)</h5></div>
             <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-            <h4 style="float: left">Phone Number</h4><h5 style="float:right">(Format : XXXX-XX-XXXX)</h5>
+            <div style="clear: both"><h4 style="float: left">Phone Number</h4><h5 style="float:right">(Format : XXXX-XX-XXXX)</h5></div>
             <input type="tel" class="form-control" name="phone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" placeholder="Enter your Phone Number" required>
             <h4>Address</h4>
             <input type="text" class="form-control" name="address" id="address" placeholder="Enter your Permanent Address" required>

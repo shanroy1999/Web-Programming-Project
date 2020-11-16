@@ -75,8 +75,8 @@
             <input type="tel" class="form-control" name="phone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" placeholder="Enter your Phone Number" required>
             <h4>Address</h4>
             <input type="text" class="form-control" name="address" id="address" placeholder="Enter your Permanent Address" required>
-            <h4><label for="country">Nationality</label></h4>
-            <select id="country" style="max-width:90%;" required>
+            <div style="clear: both"><label for="country" style="float: left">Nationality</label>
+            <select id="country" style="max-width:90%; float: right" required>
                 <option value="Select Country">Select Country</option>
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
@@ -324,7 +324,7 @@
                 <option value="Zaire">Zaire</option>
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
-            </select>
+            </select></div>
             <br>
             <h4>Zip Code</h4>
             <input type="text" class="form-control" name="zip" id="" placeholder="Enter your Zip Code" required>

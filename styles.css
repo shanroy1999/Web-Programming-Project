@@ -428,6 +428,7 @@ section{
     width: 100%;
     background-image: var(--gradient-color);
     padding: 2.5rem;
+    border-radius: 20px;
 }
 
 .contact-form .input{

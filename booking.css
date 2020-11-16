@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+.header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--purple-transparent);
+    z-index: 999;
+}
+
 body{
     background-image: url('./images/beach2.jpg');
     background-position: center;

@@ -180,7 +180,7 @@ section{
     font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0.5rem 3.5rem;
+    padding: 1.0rem 3.5rem;
     border: none;
     border-radius: 10rem;
     display: inline-flex;
@@ -281,7 +281,7 @@ section{
 }
 
 .featured-hotels{
-    height: 35rem;
+    height: 40rem;
     color: #fff;
     padding: 1rem;
     position: relative;
@@ -310,7 +310,7 @@ section{
 }
 
 .hotel-name{
-    font-size: 2.6rem;
+    font-size: 3.3rem;
 }
 
 .hotel-price{
@@ -428,7 +428,6 @@ section{
     width: 100%;
     background-image: var(--gradient-color);
     padding: 2.5rem;
-    border-radius: 20px;
 }
 
 .contact-form .input{

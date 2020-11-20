@@ -57,6 +57,7 @@ CODE :
 
 [FILE: ajax_info.txt]
 
-AJAX is the best
+Output : AJAX is the best
 ------------------------------------------------------------------
 ------------------------------------------------------------------
+RESULT : The Program has been successfully implemented.
